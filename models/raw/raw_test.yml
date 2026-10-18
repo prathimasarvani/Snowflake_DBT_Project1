@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: src_food
+    database: "{{ env_var('DBT_ZOMATO') }}"
+    schema: raw
+    tables:
+      - name: food          # replace with your actual table name in zomato.raw
+        columns:
+          - name: veg_or_non_veg
+            description: "Indicates whether the item is veg or non-veg"
+           

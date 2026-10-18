@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: raw_test
+    description: "Model built from src_food (zomato.raw)"
+    columns:
+      - name: veg_or_non_veg
+        description: "Indicates whether the item is veg or non-veg"
+        data_tests:
+          - not_null
